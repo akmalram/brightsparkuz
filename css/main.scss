@@ -1,0 +1,664 @@
+@import './smart-grid.scss';
+
+.advantages {
+    height: 75vh;
+    padding: 5rem 0;
+    background: url('../imgs/bg-1.jpg') center center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+
+
+    .row {
+        margin-top: 5rem;
+        justify-content: center;
+        text-align: center;
+    }
+    &-item {
+        @include col();
+        @include size(10);
+        @include size-md(9);
+        @include size-sm(12);
+        @include size-xs(20);
+
+
+        font-size: 2.5rem;
+        font-weight: 300;
+        
+        p {
+            display: flex;
+            align-items: center;
+        }
+
+        i {
+            font-size: 6rem;
+            color: #D61259;
+            margin-right: 2rem;
+        }
+    }
+
+    // media queries 
+
+    @include md-block {
+        &-item {
+            font-size: 2.3rem;
+    
+            i {
+                font-size: 4rem;
+                margin-right: 1.5rem;
+            }
+        }
+    }
+
+    @include sm-block {
+        padding: 2.5rem 0;
+        &-item {
+            font-size: 1.7rem;
+    
+            i {
+                font-size: 2.7rem;
+                margin-right: .7rem;
+            }
+        }
+
+        .row {
+            margin-top: 3rem;
+        }
+    }
+    @include xs-block {
+        &-item {
+            font-size: 1.7rem;
+    
+            i {
+                font-size: 2.7rem;
+                margin-right: .7rem;
+                width: 5rem;
+            }
+
+            p {
+                margin: 0;
+                margin-bottom: 2.5rem;
+            }
+        }
+        .container {
+            margin: 0;
+        }
+    }
+}
+
+.catalog {
+    padding: 8rem 0;
+    background: #f5f5f5;
+
+    &-item {
+        @include col();
+        @include size(8);
+    }
+
+    .btn-primary {
+        margin-top: 4rem;
+    }
+
+    &-item.item-1 a {
+        background-image: url(../imgs/rings.png);
+    }
+    &-item.item-2 a {
+        background-image: url(../imgs/persten.png);
+    }
+    &-item.item-3 a {
+        background-image: url(../imgs/earrings.png);
+    }
+    &-item.item-4 a {
+        background-image: url(../imgs/pendants.png);
+    }
+    &-item.item-5 a {
+        background-image: url(../imgs/bracelets.png);
+    }
+    &-item.item-6 a {
+        background-image: url(../imgs/clear.png);
+    }
+
+    &-item a {
+        width: 100%;
+        height: 14rem;
+        margin-top: 3rem;
+        background:  no-repeat left;
+        background-size: cover;
+
+        font-size: 3rem;
+        color: #3b3b3b;
+        font-weight: 300;
+        text-align: center;
+        transition: all .3s ease-out;
+        text-decoration: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 1px solid transparent;
+        box-sizing: border-box;
+        padding: 3rem;
+
+        &:hover {
+            color: #b71958;
+            outline-color: #b71958;
+        }
+    }
+
+    // Media queries
+
+    @include md-block {
+        &-item a {
+            height: 10rem;
+            font-size: 2rem;
+        }
+    }
+    @include sm-block {
+        &-item {
+            @include size-sm(12);
+        }
+        &-item a {
+            height: 14rem;
+            font-size: 2.5rem;
+        }
+    }
+
+    @include xs-block {
+        &-content {
+            margin: 0;
+        }
+        &-item {
+            @include size-sm(24);
+        }
+        &-item a {
+            height: 12rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+.catalog-new {
+    padding: 8rem 0;
+
+    .row {
+        margin: 5rem 0;
+        justify-content: space-around;
+    }
+
+    &-item {
+        @include col();
+        @include size(6);
+        @include size-md(9);
+        @include size-sm(14);
+        @include size-xs(20);
+
+        display: block;
+        padding: 3rem 2.2rem;
+        text-align: center;
+        border: 1px solid #dcdcdc;
+        transition: all .3s ease-out;
+
+        &:hover {
+            border-color: #b71958
+        }
+    }
+    &-title {
+        font-size: 1.4rem;
+        color: #31343f;
+        line-height: normal;
+        border-bottom: 1px solid transparent;
+        transition: border-color .1s ease-in-out;
+
+        &:hover {
+            border-color: #31343f;
+        }
+
+    }
+    &-price {
+        margin: 0;
+        color: #b71958;
+        font-weight: 700;
+        font-size: 1.8rem;
+        height: auto;
+        line-height: 1.2;
+        margin-top: 4px;
+    }
+
+    @include md-block {
+        padding: 4rem 0;
+        
+        &-item {
+            margin-top: 3rem;
+        }
+    }
+}
+
+.preferences {
+    padding: 8rem 0;
+
+    .row {
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    &-item {
+        @include col();
+        @include size(7);
+        @include size-sm(18);
+
+        text-align: center;
+    }
+
+    &-icon {
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #b71958;
+        border-radius: 50%;
+    }
+
+    &-title {
+        font-size: 3rem;
+        line-height: 1.1;
+        color: #b71958;
+        font-weight: 300;
+    }
+    
+    &-text {
+        font-size: 1.6rem;
+        margin: 2rem 0;
+        color: #3b3b3b;
+        line-height: 1.2;
+    }
+
+    @include md-block {
+        &-title {
+            font-size: 2rem;
+            margin: 1.5rem;
+        }
+
+        &-text {
+            font-size: 14px;
+        }
+    }
+    @include sm-block {
+        .row {
+            justify-content: space-around;
+            margin: 0;
+        }
+    }
+}
+
+.superiority {
+    background: url(../imgs/bg-2.jpg) top left repeat;
+    padding: 8rem 0;
+
+    .text, ol {
+        font-size: 1.4rem;
+    }
+    .row.outer {
+        background: #fff;
+        padding: 6rem 2rem;
+        margin: 4rem 0;
+        justify-content: space-around;
+        align-items: flex-end;
+        box-sizing: border-box;
+    }
+
+    .row.inner {
+        justify-content: center;
+    }
+
+    .headings {
+        @include col();
+        @include size(6);
+    }
+
+    .superiority-table {
+        @include col();
+        @include size(18);
+        @include size-sm(24);
+    }
+
+    .inner .superiority-list {
+        @include col-padding();
+        @include size(8);
+        @include size-sm(24);
+        padding: 0;
+        border-top: 2px solid transparent;
+    }
+
+    .inner .superiority-list.primary {
+        box-sizing: border-box;
+        border: 2px solid #b71958;
+    }
+
+    .superiority-item {
+        padding: 1.5rem 2.5rem;
+        font-size: 1.4rem;
+        height: 4rem;
+        border-top: 1px solid #dcdcdc;
+        color: #3b3b3b;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .superiority-item.heading {
+        font-size: 3rem;
+        line-height: 1.1;
+        color: #b71958;
+        font-weight: 300;
+        text-align: center;
+        border-top: none;
+    }
+    .headings .superiority-item {
+        border-color: transparent;
+        padding-left: 0;
+    }
+    .headings .superiority-list {
+        padding: 0;
+    }
+
+
+    // Media queries
+
+    @include md-block {
+        .row.outer {
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+        }
+    
+        .superiority-item {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            height: 3.6rem;
+        }
+    
+        .superiority-item.heading {
+            font-size: 2.4rem;
+        }
+    }
+
+    @include sm-block {
+        .headings {
+            display: none;
+        }
+        .row.outer {
+            padding: 2rem 1rem;
+            margin: 1rem 0;
+        }
+        .superiority-item {
+            padding: .7rem 1.6rem;
+            font-size: 1.4rem;
+            height: 3.6rem;
+        }
+    
+        .superiority-item.heading {
+            font-size: 2rem;
+        }
+    }
+}
+
+.shares {
+    padding: 8rem 0;
+    text-align: center;
+    background: url(../imgs/bg-3.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+
+    .title-secondary {
+        margin-bottom: 4rem;
+    }
+
+    .row {
+        justify-content: space-between;
+    }
+
+    &-item {
+        @include col();
+        @include size(6);
+        @include size-sm(8);
+        @include size-xs(15);
+    }
+    &-icon {
+        width: 17rem;
+        height: 17rem;
+        margin: 0 auto;
+        background: url(../imgs/shares.png) no-repeat center center;
+        background-size: cover;
+        font-size: 60px;
+        font-weight: 300;
+        color: #7c6300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.1;
+
+        sup {
+            font-size: 3rem;
+            margin-top: -20%;
+        }
+    }
+
+    &-text {
+        font-size: 1.8rem;
+    }
+    .text-bold {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    // Media queries
+
+    @include sm-block {
+        padding: 3rem 0;
+
+        .title-secondary {
+            margin-bottom: 2.5rem;
+        }
+
+        &-icon {
+            width: 14rem;
+            height: 14rem;
+            font-size: 4rem;
+
+            sup {
+                font-size: 2rem;
+                margin-top: -20%;
+            }
+        }
+
+        &-text {
+            font-size: 1.6rem;
+        }
+    }
+
+    @include xs-block {
+        .row {
+            justify-content: space-evenly;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+}
+
+.delivery {
+    text-align: center;
+    color: #fff;
+    background: #b71958;
+    padding: 8rem 0;
+
+    i {
+        font-size: 4rem;
+    }
+
+    &-text {
+        font-size: 3rem;
+    }
+
+    // Media Queries 
+
+    @include sm-block {
+        padding: 4rem 0;
+
+        i {
+            font-size: 4rem;
+        }
+
+        &-text {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.purchase-return {
+    text-align: center;
+    padding: 8rem 0;
+
+    i {
+        font-size: 4rem;
+        color: #b71958;
+    }
+
+    &-text {
+        font-size: 3rem;
+    }
+
+    // Media Queries 
+
+    @include sm-block {
+        padding: 4rem 0;
+
+        i {
+            font-size: 4rem;
+        }
+
+        &-text {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.contacts {
+    &-heading {
+        font-size: 3rem;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.4em;
+    }
+
+    &-form {
+        width: 63rem;
+        max-width: 90%;
+        margin: 40px auto 0;
+        padding: 40px 0;
+        background: url(../imgs/bg-form.png) no-repeat center/contain;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        ::-webkit-input-placeholder {
+            color: #3b3b3b;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p a {
+            color: #31343f;
+            text-decoration: underline;
+        }
+    }
+
+    &-form input, &-form textarea {
+        height: 7rem;
+        border: 1px solid #c6c6c6;
+        border-radius: 3px;
+        font-size: 1.8rem;
+        color: #3b3b3b;
+        padding: 0 2.2rem;
+        margin-bottom: 3rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &-form textarea {
+        padding-top: 1rem;
+        height: 10rem;
+    }
+
+    .input- {
+        &name, &tel {
+            @include size(11);
+            @include size-xs(24);
+        }
+
+        &type, &message {
+            @include size(24);
+        }
+    }
+    .btn-submit {
+        width: 100%;
+        height: 7rem;
+        font-size: 3rem;
+        font-weight: 300;
+        color: #3b3b3b;
+        border: none;
+        background: #ffcc00;
+        transition: all .3s ease-out;
+        cursor: pointer;
+        outline: none;
+
+        &:hover, &:focus {
+            background: #ffe066;
+            color: #494949;
+        }
+    }
+
+    // Media queries
+
+    @include md-block {
+        &-heading {
+            font-size: 2rem;
+        }
+    
+        &-form {
+            margin: 3rem auto 0;
+            padding: 2rem 0;
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    
+        &-form input , &-form textarea {
+            height: 5rem;
+            font-size: 1.6rem;
+            color: #3b3b3b;
+            padding: 0 22px;
+            margin-bottom: 3rem;
+    
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-form textarea {
+            height: 7rem;
+            padding-top: 1rem; 
+        }
+
+        .btn-submit {
+            width: 100%;
+            height: 5rem;
+            font-size: 2rem;
+        }
+    }
+}

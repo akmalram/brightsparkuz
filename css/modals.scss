@@ -1,0 +1,126 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-background {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        z-index: 11;
+        background-color: rgba(0, 0, 0, .5);
+        transition: all 200ms ease-in-out;
+    }
+
+    &-content {
+        position: relative;
+        width: 50rem;
+        max-width: 80%;
+        background-color: #fff;
+        z-index: 111;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 4rem;
+        transition: all 150ms ease-in-out;
+    }
+
+    &-heading {
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+
+    &-input- {
+        &name, &phone {
+            width: 100%;
+            height: 5rem;
+            border: 1px solid #c6c6c6;
+            border-radius: 3px;
+            font-size: 1.8rem;
+            color: #3b3b3b;
+            padding: 0 2.2rem;
+            margin-bottom: 3rem;
+            box-sizing: border-box;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &-submit {
+        width: 100%;
+        height: 7rem;
+        font-size: 3rem;
+        font-weight: 300;
+        color: #3b3b3b;
+        border: none;
+        background: #ffcc00;
+        transition: background-color .3s ease-out;
+        cursor: pointer;
+        outline: none;
+
+        &:hover, &:focus {
+            background: #f3f734;
+            color: #494949;
+        }
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 4rem;
+        font-weight: 700;
+        transform: rotate(45deg);
+        transition: text-shadow .2s ease-in-out;
+        cursor: pointer;
+        text-shadow: 0 0 0rem transparent;
+
+        &:hover {
+            text-shadow: 0 0 1.5rem #3b3b3b;
+        }
+
+    }
+
+    // Show & Hide
+    // Hiding
+    &-content {
+        transform: translateY(-8rem) scale(.9);
+        opacity: .4;
+    }
+
+    &-background {
+        opacity: .3;
+    }
+
+    visibility: hidden;
+
+    // Showing
+
+    &.active &-content {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    &.active &-background {
+        opacity: 1;
+    }
+
+    &.active {
+        visibility: visible;
+    }
+}

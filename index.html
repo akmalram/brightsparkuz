@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/modals.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'/>
+
+    <!-- Js -->
+    <script src="./js/script.js"></script>
+    
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <h2 class="modal-heading">Заказать звонок</h2>
+            <form action="/" class="call-order-form">
+                <input class="modal-input-name" type="text" name="name" placeholder="Ваше имя">
+                <input class="modal-input-phone" type="tel" name="phone" placeholder="Ваш номер">
+                <input class="modal-submit" type="submit" value="Отправить">
+            </form>
+            <div class="close-btn">+</div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <a href="tel:+998901128942" class="phone-number">+998(90) 112-89-42 <br> (Звонок бесплатный)</a>
+                    <a class="btn-primary call-order-btn">Заказать звонок</a>
+                    <p class="ps">Круглосуточно</p>
+                </div>
+                <div class="header-top_center">
+                    <a href="#">
+                        <img src="./imgs/logo.svg" alt="Логотип Компании">
+                        <p>Ювелирные изделия с муассанитами из США</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="header-nav">
+            <div class="container">
+                <span class="toggler">
+                    <span class="burger">
+                        <span class="burger-lines"></span>
+                        <span class="burger-lines"></span>
+                        <span class="burger-lines"></span>
+                    </span>
+                    <span>
+                        Меню
+                    </span>
+                </span>
+                <div class="menu">
+                    <ul class="list">
+                        <li class="item"><a href="#catalog" class="link">Каталог</a>
+                            <!--<ul class="submenu-list menu1" style="display: none;">
+                                <li class="submenu-item"><a href="#">Кольца</a></li>
+                                <li class="submenu-item"><a href="#">Серьги</a></li>
+                                <li class="submenu-item"><a href="#">Кулоны</a></li>
+                                <li class="submenu-item"><a href="#">Браслеты</a></li>
+                                <li class="submenu-item"><a href="#">Мужские перстни</a></li>
+                                <li class="submenu-item"><a href="#">Муассанит без оправки</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="item"><a href="#catalog" class="link">Новинки</a></li>
+                        <li class="item"><a href="#aboutmoissanite" class="link">О муассаните</a></li>
+                        <li class="item"><a href="#contacts" class="link">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="title-primary">Ювелирные изделия<br>с муассанитами</h2>
+                <div class="row">
+                    <div class="advantages-item text-right">
+                        <p>
+                            <i class="far fa-star"></i>
+                            Лучшая игра света
+                        </p>
+                    </div>
+                    <div class="advantages-item text-left">
+                        <p>
+                            <i class="fas fa-coins"></i>
+                            5 карат по цене 0,5
+                        </p>
+                    </div>
+                    <div class="advantages-item text-right">
+                        <p>
+                            <i class="fas fa-scroll"></i>
+                            Пожизненная гарантия*
+                        </p>
+                        
+                    </div>
+                    <div class="advantages-item text-left">
+                        <p>
+                            <i class="fab fa-sketch"></i>
+                            Идеальная огранка
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <h2 class="title-secondary">Каталог нашего ювелирного интернет-магазина</h2>
+                <div class="row">
+                    <div class="catalog-item item-1">
+                        <a href="#">Кольца</a>
+                    </div>
+                    <div class="catalog-item item-2">
+                        <a href="#">Мужские</a>
+                    </div>
+                    <div class="catalog-item item-3">
+                        <a href="#">Серьги и пусеты</a>
+                    </div>
+                    <div class="catalog-item item-4">
+                        <a href="#">Кулоны и подвески</a>
+                    </div>
+                    <div class="catalog-item item-5">
+                        <a href="#">Браслеты</a>
+                    </div>
+                    <div class="catalog-item item-6">
+                        <a href="#">Муассаниты без оправки</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-new" id="catalog-new">
+            <div class="container">
+                <h2 class="title-secondary">Новинки от Bright Spark</h2>
+                <div class="row">
+                    <div class="catalog-new-item">
+                        <img src="./imgs/trillion-moissanite.jpg" alt="" class="catalog-new-image">
+                        <a href="#" class="catalog-new-title">Муассанит огранки Триллион от 0.3 до 1.8 карата</a>
+                        <p class="catalog-new-price">7900 руб</p>
+                    </div>
+                    <div class="catalog-new-item">
+                        <img src="./imgs/heart-moissanite.jpg" alt="" class="catalog-new-image">
+                        <a href="#" class="catalog-new-title">Муассанит огранки Сердце от 0.5 до 5.5 карат</a>
+                        <p class="catalog-new-price">15200 руб</p>
+                    </div>
+                    <div class="catalog-new-item">
+                        <img src="./imgs/asscher-moissanite.jpg" alt="" class="catalog-new-image">
+                        <a href="#" class="catalog-new-title">Муассанит огранки Ашер от 0.35 до 5 карат</a>
+                        <p class="catalog-new-price">9400 руб</p>
+                    </div>
+                    <div class="catalog-new-item">
+                        <img src="./imgs/oval-moissanite.jpg" alt="" class="catalog-new-image">
+                        <a href="#" class="catalog-new-title">Муассанит огранки овал от 0.5 до 7.2 карата</a>
+                        <p class="catalog-new-price">11800 руб</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="preferences">
+            <div class="container">
+                <h2 class="title-secondary">Преимущества муассанитов Bright Spark</h2>
+                <p class="description">Муассанит — минерал в миллионы раз более редкий, чем алмаз. Крупицы натурального муассанита находят в метеоритах.<br>Твердость этого камня составляет 9,5 по шкале Мооса (бриллиант — 10)</p>
+                <div class="row">
+                    <div class="preferences-item">
+                        <div class="preferences-icon">
+                            <img src="./imgs/brilliant.png">
+                        </div>
+                        <h4 class="preferences-title">Уникальная огранка</h4>
+                        <p class="preferneces-text">Благодаря огранке Bright Spark, рассчитанной на специализированном ПО, муассанит выглядит и весит ровно, как идеальный бриллиант</p>
+                    </div>
+                    <div class="preferences-item">
+                        <div class="preferences-icon">
+                            <img src="./imgs/crown.png">
+                        </div>
+                        <h4 class="preferences-title">Чистота и цвет</h4>
+                        <p class="preferneces-text">Только наши муассаниты имеют цвет вплоть до 1, то есть не имеют оттенка, обязательно сравнивайте вживую!</p>
+                    </div>
+                    <div class="preferences-item">
+                        <div class="preferences-icon">
+                            <img src="./imgs/ok.png">
+                        </div>
+                        <h4 class="preferences-title">Всегда в наличии</h4>
+                        <p class="preferneces-text">Большинство изделий, представленных на сайте, можно купить прямо сегодня в наших магазинах Москве и Санкт-Петербурге</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="superiority">
+            <div class="container">
+                <h2 class="title-secondary">Чем муассанит лучше аналогов</h2>
+                <div class="row outer">
+                    <div class="headings">
+                        <ul class="superiority-list">
+                            <li class="superiority-item">Внешний вид</li>
+                            <li class="superiority-item">Долговечность</li>
+                            <li class="superiority-item">Цена за карат</li>
+                            <li class="superiority-item">Гарантия подлинности</li>
+                            <li class="superiority-item">Твердость</li>
+                            <li class="superiority-item">Показатель преломления</li>
+                        </ul>
+                    </div>
+                    <div class="superiority-table">
+                        <div class="row inner">
+                            <ul class="superiority-list">
+                                <li class="superiority-item heading">Бриллиант</li>
+                                <li class="superiority-item">Зависит от качества огранки</li>
+                                <li class="superiority-item">Пожизненная гарантия*</li>
+                                <li class="superiority-item">$6000-8000</li>
+                                <li class="superiority-item">Сертификат GIA</li>
+                                <li class="superiority-item">10</li>
+                                <li class="superiority-item">2,42</li>
+                            </ul>
+                            <ul class="superiority-list primary">
+                                <li class="superiority-item heading">Муассанит</li>
+                                <li class="superiority-item">Всегда идеальная огранка</li>
+                                <li class="superiority-item">Пожизненная гарантия*</li>
+                                <li class="superiority-item">$300</li>
+                                <li class="superiority-item">Сертификат производителя</li>
+                                <li class="superiority-item">9,5</li>
+                                <li class="superiority-item">2,65</li>
+                            </ul>
+                            <ul class="superiority-list">
+                                <li class="superiority-item heading">Фианит</li>
+                                <li class="superiority-item">Пропускает свет и под углом выглядит как стекло</li>
+                                <li class="superiority-item">Тускнеет через пару месяцев</li>
+                                <li class="superiority-item">$0,10</li>
+                                <li class="superiority-item">Не сертифицируется</li>
+                                <li class="superiority-item">7,5-8</li>
+                                <li class="superiority-item">2,18</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">* Пожизненная гарантия не распространяется на внешние механические повреждения. Более пяти лет компания специализируется на производстве и продаже ювелирных изделий через интернет-магазин и шоу-рум в Москве и Санкт-Петербурге. Кольца, серьги, кулоны и браслеты украшены муассанитами — лучшим (и более доступным) аналогом бриллианта. Каждый товар упакован в красивый деревянный футляр.</p>
+                <h2 class="title-secondary" id="aboutmoissanite">Что такое муассанит?</h2>
+                <p class="text">Это синтетический минерал, который превосходит бриллиант по чистоте и игре света. Он производится в США компаниями Charles & Colvard и Bright Spark. Камень сверкает на 25 % ярче бриллианта, имеет уровень твердости 9.5 по шкале Мооса и обладает пожизненной гарантией. В процессе эксплуатации полностью сохраняет форму и прозрачность, не боится царапин. Уникальная огранка Bright Spark делает муассанит неотличимым от идеального бриллианта и отлично раскрывает игру камня. Позвольте себе больше — стоимость аналога в 10-20 раз ниже, чем у «оригинала»!</p>
+                <p class="text">
+                    Ассортимент ювелирных изделий в интернет-магазине Bright Spark <br>
+                    Представляем Вашему вниманию коллекцию украшений собственного производства. Закрепка камней осуществляется ведущими ювелирами с помощью микроскопа. Современные технологии и высокоточное оборудование позволяют нам создавать невозможное.
+                </p>
+                <p class="text">В ювелирном интернет-магазине представлены:</p>
+                <ol>
+                    <li>Кольца (обручальные, помолвочные) — «Картье», «Графф», «Тиффани», а также собственные дизайнерские модели для мужчин и женщин.</li>
+                    <li>Серьги — от лаконичных гвоздиков до эффектных вечерних вариантов. Стильный акцент для любого образа.</li>
+                    <li>Кулоны и подвески — изысканное дополнение к платью или костюму. Отличный выбор для романтичного настроения!</li>
+                    <li>Браслеты — тонкие цепочки и элегантные теннисные модели станут жемчужиной Вашей коллекции украшений.</li>
+                </ol>
+                <p class="text">Как сделать заказ? <br>
+                    Если товар есть в наличии, Вы получите его в день заказа в ювелирном интернет-магазине. Возможна бесплатная подгонка колец по размеру. Индивидуальное изготовление украшений занимает 4 недели.</p>
+            </div>
+        </section>
+        <section class="shares">
+            <div class="container">
+                <h2 class="title-secondary">Акции на украшения с муассанитом</h2>
+                <div class="row">
+                    <div class="shares-item">
+                        <div class="shares-icon">5<sup>%</sup></div>
+                        <p class="shares-text">
+                            <b class="text-bold">Скидка 5%</b>
+                            Постоянным покупателям
+                        </p>
+                    </div>
+                    <div class="shares-item">
+                        <div class="shares-icon">25<sup>%</sup></div>
+                        <p class="shares-text">
+                            <b class="text-bold">Скидки до 25%</b>
+                            на изделия в наличии
+                        </p>
+                    </div>
+                    <div class="shares-item">
+                        <div class="shares-icon">30<sup>%</sup></div>
+                        <p class="shares-text">
+                            <b class="text-bold">Скидка 30% на одно изделие из каталога</b>
+                            Действует в течение недели
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="container">
+                <i class="fas fa-truck"></i>
+                <p class="delivery-text">Осуществляем бесплатную доставку украшений по Ташкенту в пределах МКАД Доставка по России от 1 дня</p>
+            </div>
+        </section>
+        <section class="purchase-return">
+            <div class="container">
+                <i class="fas fa-undo-alt"></i>
+                <p class="purchase-return-text">Если оно вам не подойдет, вы можете вернуть его в течение 7 дней с момента получения</p>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <p class="contacts-heading">Есть вопросы? <br> <b>Напишите нам</b></p>
+            <form action="Null" class="contacts-form">
+                <input type="text" class="input-name" name="name" placeholder="Имя" required="true">
+                <input type="text" class="input-tel" name="phone" placeholder="Телефон" required="true">
+                <input type="text" class="input-type" name="type" placeholder="Какие украшения интересуют?">
+                <textarea class="input-message" name="message" placeholder="Напишите письмо" required="true"></textarea>
+                <button type="submit" name="submit" class="btn-submit">Отправить</button>
+                <p>Нажимая на кнопку "Отправить", Вы даете согласие на обработку персональных данных и соглашаетесь c <a href="">политикой конфиденциальности</a>.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="footer-top-left">
+                        <a href="#">
+                            <img src="./imgs/logo.svg" alt="Логотип Компании">
+                            <p>Ювелирные изделия с муассанитами из США</p>
+                        </a>
+                    </div>
+                    <div class="footer-top-center">
+                        <div class="contact-numbers">
+                            <ul>
+                                <li><span>Ташкент:</span> <a href="tel:+998901128942">+998901128942</a></li>
+                            </ul>
+                            <a class="btn-primary  call-order-btn">Заказать звонок</a>
+                            <p class="ps">Ежедневно: 10:00–21:00</p>
+                        </div>
+                    </div>
+                    <div class="footer-top-right">
+                        <p>
+                            г. Ташкент, ул. Чингиза Айтматова, д. 554<br>
+                            БЦ "Симонов-Плаза" (м. Автозаводская).
+                        </p>
+                        <div class="links">
+                            <div class="socials">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter-square"></i>
+                                </a>
+                            </div>
+                            <div class="payment">
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-visa"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

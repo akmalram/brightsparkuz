@@ -1,0 +1,172 @@
+footer {
+  padding: 2rem 0;
+}
+
+.footer-top .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-top-left, .footer-top-center, .footer-top-right {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.footer-top-left {
+  width: calc(33.33333% - 30px);
+}
+
+@media screen and (max-width: 720px) {
+  .footer-top-left {
+    width: calc(100% - 30px);
+  }
+}
+
+.footer-top-left p {
+  text-align: center;
+  font-size: 14px;
+  color: #959595;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top-center {
+  width: calc(33.33333% - 30px);
+}
+
+@media screen and (max-width: 720px) {
+  .footer-top-center {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-top-center {
+    width: calc(100% - 30px);
+  }
+}
+
+.footer-top-center .subscribe-email {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
+  width: 25rem;
+  padding: .7rem 1rem;
+  font-size: 1.8rem;
+  color: #353535;
+  border: 1px solid #b71958;
+}
+
+.footer-top-center .subscribe-email:focus {
+  outline: none;
+}
+
+.footer-top-center .subscribe-btn {
+  max-width: 100%;
+  width: 25rem;
+  background-color: #b71958;
+  color: #fff;
+  padding: .7rem 0;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-top-center p {
+  font-size: 1.2rem;
+}
+
+.footer-top-center p a {
+  color: #353535;
+  text-decoration: underline;
+}
+
+.footer-top-right {
+  width: calc(33.33333% - 30px);
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 720px) {
+  .footer-top-right {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-top-right {
+    width: calc(100% - 30px);
+  }
+}
+
+.footer-top ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-top .contact-numbers ul {
+  margin-bottom: 1rem;
+}
+
+.footer-top .contact-numbers span {
+  display: inline-block;
+  width: 10rem;
+}
+
+.footer-top .contact-numbers .ps {
+  font-size: 1.2rem;
+  color: #959595;
+  margin: 0;
+}
+
+.footer-top .contact-numbers a:not(.btn-primary) {
+  display: inline-block;
+  color: #353535;
+  padding: .3rem 0;
+  text-decoration: underline;
+}
+
+.footer-top .links {
+  text-align: center;
+}
+
+.footer-top .links .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer-top .links .socials a {
+  display: inline-block;
+  font-size: 4rem;
+  color: #353535;
+  text-shadow: 0 0 0rem #3535359c;
+  -webkit-transition: text-shadow .2s ease-in-out;
+  transition: text-shadow .2s ease-in-out;
+}
+
+.footer-top .links .socials a:hover {
+  text-shadow: 0 0 2rem #3535359c;
+}
+
+.footer-top .links .payment i {
+  font-size: 6rem;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-top .site-map, .footer-top .contact-numbers {
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

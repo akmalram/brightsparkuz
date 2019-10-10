@@ -1,0 +1,143 @@
+@import './smart-grid.scss';
+
+footer {
+    padding: 2rem 0;
+}
+
+.footer-top {
+    .row {
+        justify-content: center;
+    }
+
+    &-left, &-center, &-right {
+        @include col();
+
+        padding: 1rem;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    &-left {
+        @include size(8);
+        @include size-sm(24);
+        p {
+            text-align: center;
+            font-size: 14px;
+            color: #959595;
+            margin: 0;
+            padding: 0; 
+        }
+    }
+
+    &-center {
+        @include size(8);
+        @include size-sm(12);
+        @include size-xs(24);
+
+        .subscribe-email {
+            box-sizing: border-box;
+            max-width: 100%;
+            width: 25rem;
+            padding: .7rem 1rem;
+            font-size: 1.8rem;
+            color: #353535;
+            border: 1px solid #b71958;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        .subscribe-btn {
+            max-width: 100%;
+            width: 25rem;
+            background-color: #b71958;
+            color: #fff;
+            padding: .7rem 0;
+            border: none;
+            font-size: 1.6rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        p {
+            font-size: 1.2rem;
+            a {
+                color: #353535;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-right {
+        @include size(8);
+        @include size-sm(12);
+        @include size-xs(24);
+        font-size: 1.4rem;
+    }
+
+    // Media queries
+
+    @include md-block {
+
+    }
+}
+
+.footer-top {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .contact-numbers {
+        ul {
+            margin-bottom: 1rem;
+        }
+        span {
+            display: inline-block;
+            width: 10rem;
+        }
+        .ps {
+            font-size: 1.2rem;
+            color: #959595;
+            margin: 0;
+        }
+        a:not(.btn-primary) {
+            display: inline-block;
+            color: #353535;
+            padding: .3rem 0;
+            text-decoration: underline;
+        }
+    }
+
+    .links {
+        text-align: center;
+
+        .socials {
+            display: flex;
+            justify-content: space-evenly;
+            a {
+                display: inline-block;
+                font-size: 4rem;
+                color: #353535;
+                text-shadow: 0 0 0rem #3535359c;
+                transition: text-shadow .2s ease-in-out;
+
+                &:hover {
+                    text-shadow: 0 0 2rem #3535359c;
+                }
+            }
+        }
+
+        .payment i {
+            font-size: 6rem;
+        }
+    }
+
+    // Media queries
+
+    @include xs-block {
+        .site-map, .contact-numbers {
+            margin-bottom: 1rem;
+        }
+    }
+}
